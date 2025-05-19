@@ -49,7 +49,7 @@ class ProjectController extends Controller
             'status' => 'required|in:draft,published',
         ]);
 
-        // Optional: sanitize text fields
+
         $incomingFields['title'] = strip_tags($incomingFields['title']);
         $incomingFields['description'] = strip_tags($incomingFields['description']);
 
